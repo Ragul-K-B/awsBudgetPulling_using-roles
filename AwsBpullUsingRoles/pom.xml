@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>AwsBpullUsingRoles</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <!-- AWS SDK for Java (v2) - STS Client -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>sts</artifactId>
+            <version>2.29.23</version> <!-- Ensure this version is compatible with your code -->
+        </dependency>
+
+        <!-- AWS SDK for Java (v2) - Budgets Client -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>budgets</artifactId>
+            <version>2.29.23</version> <!-- Ensure this version is compatible with your code -->
+        </dependency>
+
+        <!-- AWS SDK Core dependency -->
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>aws-core</artifactId>
+            <version>2.29.23</version> <!-- Use the same version across SDK dependencies -->
+        </dependency>
+
+        <!-- SLF4J for logging (required by AWS SDK) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
